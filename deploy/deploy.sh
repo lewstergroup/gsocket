@@ -51,10 +51,10 @@
 #       - Guess what...
 
 # Global Defines
-# URL_BASE="https://github.com/hackerschoice/binary/raw/main/gsocket/bin/"
-URL_BASE="https://gsocket.io/bin/"
+URL_BASE="https://github.com/hackerschoice/binary/raw/main/gsocket/bin/"
+#URL_BASE="https://gsocket.io/bin/"
 [[ -n "$GS_URL_BASE" ]] && URL_BASE="$GS_URL_BASE" # Use user supplied URL_BASE
-URL_DEPLOY="gsocket.io/x"
+URL_DEPLOY="https://raw.githubusercontent.com/hackerschoice/gsocket/master/deploy/deploy.sh"
 # GS_VERSION=1.4.34
 DL_CRL="bash -c \"\$(curl -fsSL $URL_DEPLOY)\""
 DL_WGT="bash -c \"\$(wget -qO- $URL_DEPLOY)\""
